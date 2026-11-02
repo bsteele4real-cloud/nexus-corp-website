@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Corp | Innovative Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9',
+            secondary: '#0369a1',
+            accent: '#22d3ee'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0ea5e9 100%); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-hexagon text-primary text-2xl"></i>
+          <span class="text-2xl font-bold text-gray-900">Nexus</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-primary transition">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
+          <a href="#services" class="text-gray-700 hover:text-primary transition">Services</a>
+          <a href="#testimonials" class="text-gray-700 hover:text-primary transition">Testimonials</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
+        </div>
+        <button class="md:hidden text-gray-700" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Home</a>
+        <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">About</a>
+        <a href="#services" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Services</a>
+        <a href="#testimonials" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Testimonials</a>
+        <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero-gradient min-h-screen flex items-center pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Transforming Ideas<br>Into Reality</h1>
+      <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">Nexus Corp delivers cutting-edge solutions that drive growth, innovation, and success for businesses worldwide.</p>
+      <div class="space-x-4">
+        <a href="#contact" class="inline-block bg-white text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition">Get Started</a>
+        <a href="#services" class="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary transition">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold mb-6 text-gray-900">About Nexus Corp</h2>
+          <p class="text-lg text-gray-600 mb-4">Founded in 2015, Nexus Corp has been at the forefront of digital transformation. We partner with companies to solve complex challenges through technology, strategy, and creativity.</p>
+          <p class="text-lg text-gray-600 mb-6">Our team of experts brings decades of combined experience across industries, delivering measurable results that matter.</p>
+          <div class="flex space-x-8">
+            <div><span class="text-4xl font-bold text-primary">500+</span><p class="text-gray-600">Clients Served</p></div>
+            <div><span class="text-4xl font-bold text-primary">98%</span><p class="text-gray-600">Satisfaction</p></div>
+            <div><span class="text-4xl font-bold text-primary">50+</span><p class="text-gray-600">Team Members</p></div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl h-96 flex items-center justify-center text-white">
+          <i class="fas fa-building text-8xl opacity-80"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-gray-900">Our Services</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive solutions tailored to your business needs.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl card-hover shadow-md">
+          <i class="fas fa-code text-primary text-4xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-3">Custom Development</h3>
+          <p class="text-gray-600">Build scalable web and mobile applications designed for performance and growth.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl card-hover shadow-md">
+          <i class="fas fa-chart-line text-primary text-4xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-3">Digital Strategy</h3>
+          <p class="text-gray-600">Data-driven strategies that optimize operations and accelerate market presence.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl card-hover shadow-md">
+          <i class="fas fa-shield-alt text-primary text-4xl mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-3">Security & Compliance</h3>
+          <p class="text-gray-600">Protect your assets with robust cybersecurity and regulatory compliance solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">What Clients Say</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <p class="text-lg text-gray-700 mb-6 italic">"Nexus transformed our digital infrastructure. The results exceeded all expectations."</p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">JS</div>
+            <div><p class="font-semibold">Jane Smith</p><p class="text-sm text-gray-500">CEO, TechStart</p></div>
+          </div>
+        </div>
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <p class="text-lg text-gray-700 mb-6 italic">"Professional, innovative, and reliable. A true partner in our success."</p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white font-bold mr-4">MR</div>
+            <div><p class="font-semibold">Mike Roberts</p><p class="text-sm text-gray-500">Director, Global Inc</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Innovate?</h2>
+      <p class="text-xl mb-10 opacity-90">Let's discuss how Nexus can help your business thrive.</p>
+      <form class="space-y-4 max-w-lg mx-auto">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-primary">
+        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-primary">
+        <textarea placeholder="Message" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-primary"></textarea>
+        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white py-3 rounded-lg font-semibold transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex justify-center space-x-6 mb-6">
+        <a href="#" class="hover:text-white"><i class="fab fa-linkedin text-xl"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-github text-xl"></i></a>
+      </div>
+      <p>&copy; 2026 Nexus Corp. All rights reserved.</p>
+      <p class="text-sm mt-2">Designed for excellence. Customizable template.</p>
+    </div>
+  </footer>
+</body>
+</html>
